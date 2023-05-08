@@ -11,19 +11,21 @@ Stack.prototype.state = function () {
     console.log(this.array);
 }
 // Stack.prototype.isEmpty = function () {
-    // console.log(this.array.length == 0);
+// console.log(this.array.length == 0);
 // };
 Stack.prototype.add = function (element) {
     this.array.push(element);
 }
-Stack.prototype.remove=function(){
+Stack.prototype.remove = function () {
     this.array.pop();
 }
-Stack.prototype.accessNthElement=function(n){
+Stack.prototype.accessNthElement = function (n) {
     while(--n != 0){
-        this.array.pop();
+    this.array.pop();
     }
+    
     return this.array.pop();
+
 }
 
 
@@ -37,5 +39,5 @@ stack1.add(4);
 console.log(stack1)
 stack1.remove();
 console.log(stack1)
-console.log(stack1.accessNthElement(3));
+console.log(stack1.accessNthElement(2));
 
