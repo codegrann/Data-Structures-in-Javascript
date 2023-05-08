@@ -38,4 +38,3 @@ console.log(stack1)
 stack1.remove();
 console.log(stack1)
 console.log(stack1.accessNthElement(2));
-
