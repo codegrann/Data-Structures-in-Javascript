@@ -23,7 +23,6 @@ Stack.prototype.accessNthElement = function (n) {
     while(--n != 0){
     this.array.pop();
     }
-    
     return this.array.pop();
 
 }
@@ -32,8 +31,7 @@ Stack.prototype.accessNthElement = function (n) {
 
 
 let stack1 = new Stack([1, 2, 3]);
-// let stack2=new Stack()
-// stack2.isEmpty()
+stack1.state();
 stack1.isEmpty();
 stack1.add(4);
 console.log(stack1)
