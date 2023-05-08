@@ -2,15 +2,18 @@
 function Stack(array) {
     this.array = [];
     if (array) this.array = array;
+    this.isEmpty = function () {
+        console.log(this.array.length == 0);
+    };
 }
 
 Stack.prototype.state = function () {
     console.log(this.array);
 }
 
-Stack.prototype.isEmpty = function () {
-    console.log(this.array.length == 0);
-};
+// Stack.prototype.isEmpty = function () {
+    // console.log(this.array.length == 0);
+// };
 Stack.prototype.add = function (element) {
     this.array.push(element);
 }
