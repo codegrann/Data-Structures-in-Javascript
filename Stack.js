@@ -10,7 +10,6 @@ function Stack(array) {
 Stack.prototype.state = function () {
     console.log(this.array);
 }
-
 // Stack.prototype.isEmpty = function () {
     // console.log(this.array.length == 0);
 // };
@@ -19,6 +18,9 @@ Stack.prototype.add = function (element) {
 }
 Stack.prototype.remove=function(){
     this.array.pop();
+}
+Stack.prototype.accessNthElement=function(n){
+    
 }
 
 
@@ -32,4 +34,4 @@ stack1.add(4);
 console.log(stack1)
 stack1.remove();
 console.log(stack1)
-
+stack1.accessNthElement(2);
