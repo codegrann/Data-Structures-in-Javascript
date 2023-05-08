@@ -20,7 +20,10 @@ Stack.prototype.remove=function(){
     this.array.pop();
 }
 Stack.prototype.accessNthElement=function(n){
-    
+    while(--n != 0){
+        this.array.pop();
+    }
+    return this.array.pop();
 }
 
 
@@ -34,4 +37,5 @@ stack1.add(4);
 console.log(stack1)
 stack1.remove();
 console.log(stack1)
-stack1.accessNthElement(2);
+console.log(stack1.accessNthElement(3));
+
