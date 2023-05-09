@@ -40,7 +40,10 @@ console.log(stack1)
 console.log(stack1.accessNthElement(2));
 
 
-let myArr=[5,6,7];
+let myArr=[55,8,7];
 console.log(myArr.lastIndexOf(5));
-myArr.fill(3, 1,2);
+myArr.sort(ascend);
 console.log(myArr)
+function ascend(a,b){
+    return (a-b);
+}
