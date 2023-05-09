@@ -38,3 +38,9 @@ console.log(stack1)
 stack1.remove();
 console.log(stack1)
 console.log(stack1.accessNthElement(2));
+
+
+let myArr=[5,6,7];
+console.log(myArr.lastIndexOf(5));
+myArr.fill(3, 1,2);
+console.log(myArr)
