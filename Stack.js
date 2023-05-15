@@ -20,7 +20,7 @@ Stack.prototype.remove = function () {
     this.array.pop();
 }
 Stack.prototype.accessNthElement = function (n) {
-    while(--n != 0){
+    while(!--n == 0){
     this.array.pop();
     }
     return this.array.pop();
@@ -40,7 +40,3 @@ console.log(stack1)
 console.log(stack1.accessNthElement(2));
 
 
-let myArr=[5,8,7];
-let yourArr=[9,10];
-console.log(myArr.splice(1, 2, ...yourArr));
-console.log(myArr)
