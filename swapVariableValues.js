@@ -13,12 +13,3 @@ console.log(a, b);
 // Using destructuring
 [a, b]=[b, a];
 console.log(a, b); 
-
-function getNthFibo(n) {
-        if (n <= 1) {
-            console.log(n);
-        } else {
-            console.log(getNthFibo(n - 1) + getNthFibo(n - 2));
-        }
-    }
-    getNthFibo(2)
